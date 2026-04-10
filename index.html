@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags - Hizi ni kwa ajili ya Google -->
+    <title>Smart Janja - Mkombozi wa Biashara Yako | TMG Platform</title>
+    <meta name="description" content="Pakua Smart Janja APK, mfumo bora wa kusimamia mauzo na ripoti za biashara Tanzania. Inafanya kazi Offline bila internet. Imetengenezwa na TMG Platform.">
+    <meta name="keywords" content="Smart Janja, SmartJanja APK, Mauzo, Ripoti za Biashara, TMG Platform, Tanzania Business App, Offline Sales App">
+    <meta name="author" content="TMG Platform">
+    
+    <!-- Open Graph Meta Tags (Kwa ajili ya kushare WhatsApp/Facebook ili ionekane vizuri) -->
+    <meta property="og:title" content="Smart Janja - Simamia Biashara Yako Kidijitali">
+    <meta property="og:description" content="Tengeneza ripoti za mauzo automatic bila bando. Pakua sasa kwa Android.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-blue: #007bff;
+            --bright-blue: #00d4ff;
+            --dark-blue: #003366;
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --white: #ffffff;
+            --overlay-bg: rgba(0, 0, 0, 0.8);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #001f3f, #007bff);
+            color: var(--white);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span { color: var(--bright-blue); }
+
+        .hero {
+            padding: 80px 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin-bottom: 40px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .download-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 25px;
+            width: 300px;
+            transition: 0.3s;
+            text-align: center;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 212, 255, 0.2);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .card i {
+            font-size: 60px;
+            color: var(--bright-blue);
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: var(--bright-blue);
+            color: #001f3f;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: 0.3s;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn:hover {
+            background: var(--white);
+            transform: scale(1.05);
+        }
+
+        /* Pop-up Modal Style */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--overlay-bg);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background: #1a1a1a;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 400px;
+            border: 2px solid var(--bright-blue);
+            box-shadow: 0 0 30px var(--bright-blue);
+        }
+
+        .modal-content i {
+            font-size: 50px;
+            color: var(--bright-blue);
+            margin-bottom: 20px;
+        }
+
+        .modal-content h2 { margin-bottom: 10px; }
+        .modal-content p { color: #ccc; margin-bottom: 25px; }
+
+        /* Features Section */
+        .features {
+            padding: 60px 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-item {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 25px;
+            border-radius: 20px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .feature-item i { color: var(--bright-blue); font-size: 28px; }
+
+        footer {
+            padding: 40px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .live-badge {
+            background: #2ed573;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fas fa-rocket"></i>
+            Smart <span>Janja</span>
+        </div>
+        <div class="live-badge">Live: Toleo 1.0</div>
+    </header>
+
+    <section class="hero">
+        <h1>Boresha Biashara Yako Sasa</h1>
+        <p>Pakua Smart Janja kwenye simu yako na uanze kusimamia mauzo na hesabu zako kitalaamu bila kuhitaji internet.</p>
+        
+        <div class="download-container">
+            <!-- Kadi ya Android (DOWNLOAD MOJA KWA MOJA) -->
+            <div class="card">
+                <i class="fab fa-android"></i>
+                <h3>Android App</h3>
+                <p>Toleo la simu za Android (APK). Lipige picha daftari uingize data.</p>
+                <a href="SmartJanja_1_1.0v.apk" download class="btn">
+                    <i class="fas fa-cloud-download-alt"></i> Pakua APK Sasa
+                </a>
+            </div>
+
+            <!-- Kadi ya Windows (POP UP) -->
+            <div class="card">
+                <i class="fab fa-windows"></i>
+                <h3>Windows PC</h3>
+                <p>Toleo la Desktop kwa ajili ya usimamizi mkubwa wa ofisini.</p>
+                <button onclick="showPopup()" class="btn" style="background: rgba(255,255,255,0.1); color: white; border: 1px solid var(--bright-blue);">
+                    <i class="fas fa-hourglass-half"></i> Angalia Toleo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-item">
+            <i class="fas fa-bolt"></i>
+            <div>
+                <h4>Kasi ya Ajabu</h4>
+                <p>Hakuna kusubiri, kila kitu ni papo hapo.</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-lock"></i>
+            <div>
+                <h4>Usalama wa Data</h4>
+                <p>Data zako hazipotei, zinahifadhiwa salama.</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-wifi-slash"></i>
+            <div>
+                <h4>Haitumii Bando</h4>
+                <p>Tumia popote duniani hata kama huna internet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pop-up Modal -->
+    <div class="modal-overlay" id="windowsModal">
+        <div class="modal-content">
+            <i class="fas fa-tools"></i>
+            <h2>Inakuja Hivi Karibuni!</h2>
+            <p>Toleo la Windows PC bado lipo kwenye hatua za mwisho za matengenezo. Litafunguliwa hivi karibuni.</p>
+            <button class="btn" onclick="hidePopup()">Sawa, Nimeelewa</button>
+        </div>
+    </div>
+
+    <footer>
+        <p style="font-weight: bold; font-size: 18px;">TMG PLATFORM</p>
+        <p style="font-size: 14px; opacity: 0.6; margin-top: 10px;">© 2026 Smart Janja. Haki zote zimehifadhiwa.</p>
+    </footer>
+
+    <script>
+        function showPopup() {
+            document.getElementById('windowsModal').style.display = 'flex';
+        }
+        function hidePopup() {
+            document.getElementById('windowsModal').style.display = 'none';
+        }
+        
+        window.onclick = function(event) {
+            let modal = document.getElementById('windowsModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
