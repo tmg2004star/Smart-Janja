@@ -1,1 +1,2 @@
 User-agent: *Allow: /Hii inaiambia Google wapi pa kupata ramani ya kurasa zakoSitemap: https://www.google.com/search?q=https://tmg2004star.github.io/Smart-Janja-app/sitemap.xml
+google-site-verification=SF-EJVhv7ynwpV8su2oXmrI3qd7oc4K2oqlBLXZWm3o
