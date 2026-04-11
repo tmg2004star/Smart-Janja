@@ -1,332 +1,200 @@
 <!DOCTYPE html>
-<html lang="sw">
+<html lang="sw" class="scroll-smooth">
 <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NK64GS2F');</script>
-<!-- End Google Tag Manager -->
-    <meta charset="UTF-8">
-  <meta name="google-site-verification=SF-EJVhv7ynwpV8su2oXmrI3qd7oc4K2oqlBLXZWm3o">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="gBqjoc8vY6Q-V7REpiNPjzq_U0IzG2Teuk62yySNXm0" />
-    <!-- SEO Meta Tags - Hizi ni kwa ajili ya Google -->
-    <title>Smart Janja App - APK for Android -Free Download - Mkombozi wa Biashara yako| TMG Platform</title>
-    <meta name="description" content="Pakua Smart Janja APK, mfumo bora wa kusimamia mauzo na ripoti za biashara Tanzania. Inafanya kazi Offline bila internet. Imetengenezwa na TMG Platform.">
-    <meta name="keywords" content="Smart Janja app , smartjanja , smart , janja , smart janja, SmartJanja APK, free download, app, APP, app,download, apk,smart janja apk, Ripoti za Biashara, TMG Platform, Tanzania Business App, Offline Sales App">
-    <meta name="author" content="TMG Platform">
-    
-    <!-- Open Graph Meta Tags (Kwa ajili ya kushare WhatsApp/Facebook ili ionekane vizuri) -->
-    <meta property="og:title" content="Smart Janja - Simamia Biashara Yako Kidijitali">
-    <meta property="og:description" content="Tengeneza ripoti za mauzo automatic bila bando. Pakua sasa kwa Android.">
-    <meta property="og:type" content="website">
+    <!-- ================= GOOGLE TAG MANAGER (GTM) ================= -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NK64GS2F');</script>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ================= GOOGLE SITE VERIFICATION ================= -->
+    <meta name="google-site-verification" content="SF-EJVhv7ynwpV8su2oXmrI3qd7oc4K2oqlBLXZWm3o" />
+    <meta name="google-site-verification" content="gBqjoc8vY6Q-V7REpiNPjzq_U0IzG2Teuk62yySNXm0" />
+
+    <!-- ================= GOOGLE ANALYTICS (GA4) ================= -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SDECHVMN85"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-SDECHVMN85');
+    </script>
+
+    <!-- ================= SEO META TAGS ================= -->
+    <title>Smart Janja App - Pakua APK Rasmi | TMG Platform</title>
+    <meta name="description" content="Pakua Smart Janja APK free download. Mfumo namba moja Tanzania wa kusimamia mauzo na faida bila internet (Offline).">
+    <meta name="keywords" content="Smart Janja, Smart Janja app, SmartJanja APK, download smart janja, TMG Platform, Tanzania Business App">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SDECHVMN85"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SDECHVMN85');
-</script>
-
-    
-    <style>
-        :root {
-            --primary-blue: #007bff;
-            --bright-blue: #00d4ff;
-            --dark-blue: #003366;
-            --glass-bg: rgba(255, 255, 255, 0.1);
-            --white: #ffffff;
-            --overlay-bg: rgba(0, 0, 0, 0.8);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background: linear-gradient(135deg, #001f3f, #007bff);
-            color: var(--white);
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
-
-        header {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            padding: 20px 10%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .logo span { color: var(--bright-blue); }
-
-        .hero {
-            padding: 80px 10%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            text-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-
-        .hero p {
-            font-size: 18px;
-            max-width: 700px;
-            margin-bottom: 40px;
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        .download-container {
-            display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .card {
-            background: var(--glass-bg);
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 25px;
-            width: 300px;
-            transition: 0.3s;
-            text-align: center;
-            position: relative;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(0, 212, 255, 0.2);
-            background: rgba(255, 255, 255, 0.15);
-        }
-
-        .card i {
-            font-size: 60px;
-            color: var(--bright-blue);
-            margin-bottom: 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 14px 28px;
-            background: var(--bright-blue);
-            color: #001f3f;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 700;
-            transition: 0.3s;
-            margin-top: 20px;
-            cursor: pointer;
-            border: none;
-        }
-
-        .btn:hover {
-            background: var(--white);
-            transform: scale(1.05);
-        }
-
-        /* Pop-up Modal Style */
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--overlay-bg);
-            display: none;
-            justify-content: center;
-            align-items: center;
-            z-index: 2000;
-            backdrop-filter: blur(5px);
-        }
-
-        .modal-content {
-            background: #1a1a1a;
-            padding: 40px;
-            border-radius: 20px;
-            text-align: center;
-            max-width: 400px;
-            border: 2px solid var(--bright-blue);
-            box-shadow: 0 0 30px var(--bright-blue);
-        }
-
-        .modal-content i {
-            font-size: 50px;
-            color: var(--bright-blue);
-            margin-bottom: 20px;
-        }
-
-        .modal-content h2 { margin-bottom: 10px; }
-        .modal-content p { color: #ccc; margin-bottom: 25px; }
-
-        /* Features Section */
-        .features {
-            padding: 60px 10%;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .feature-item {
-            background: rgba(0, 0, 0, 0.3);
-            padding: 25px;
-            border-radius: 20px;
-            display: flex;
-            gap: 15px;
-            align-items: center;
-        }
-
-        .feature-item i { color: var(--bright-blue); font-size: 28px; }
-
-        footer {
-            padding: 40px;
-            text-align: center;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            background: rgba(0, 0, 0, 0.2);
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-
-        .live-badge {
-            background: #2ed573;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 12px;
-            animation: pulse 2s infinite;
-        }
-    </style>
-</head>
-<body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NK64GS2F"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-    <header>
-        <div class="logo">
-            <i class="fas fa-rocket"></i>
-            Smart <span>Janja</span>
-        </div>
-        <div class="live-badge">Live: Toleo 1.0</div>
-    </header>
-
-    <section class="hero">
-        <h1>Boresha Biashara Yako Sasa</h1>
-        <p>Pakua Smart Janja kwenye simu yako na uanze kusimamia mauzo na hesabu zako kitalaamu bila kuhitaji internet.</p>
-        
-        <div class="download-container">
-            <!-- Kadi ya Android (DOWNLOAD MOJA KWA MOJA) -->
-            <div class="card">
-                <i class="fab fa-android"></i>
-                <h3>Android App</h3>
-                <p>Toleo la simu za Android (APK). Lipige picha daftari uingize data.</p>
-                <a href="SmartJanja_1_1.0v.apk" download class="btn">
-                    <i class="fas fa-cloud-download-alt"></i> Pakua APK Sasa
-                </a>
-            </div>
-
-            <!-- Kadi ya Windows (POP UP) -->
-            <div class="card">
-                <i class="fab fa-windows"></i>
-                <h3>Windows PC</h3>
-                <p>Toleo la Desktop kwa ajili ya usimamizi mkubwa wa ofisini.</p>
-                <button onclick="showPopup()" class="btn" style="background: rgba(255,255,255,0.1); color: white; border: 1px solid var(--bright-blue);">
-                    <i class="fas fa-hourglass-half"></i> Angalia Toleo
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <section class="features">
-        <div class="feature-item">
-            <i class="fas fa-bolt"></i>
-            <div>
-                <h4>Kasi ya Ajabu</h4>
-                <p>Hakuna kusubiri, kila kitu ni papo hapo.</p>
-            </div>
-        </div>
-        <div class="feature-item">
-            <i class="fas fa-lock"></i>
-            <div>
-                <h4>Usalama wa Data</h4>
-                <p>Data zako hazipotei, zinahifadhiwa salama.</p>
-            </div>
-        </div>
-        <div class="feature-item">
-            <i class="fas fa-wifi-slash"></i>
-            <div>
-                <h4>Haitumii Bando</h4>
-                <p>Tumia popote duniani hata kama huna internet.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pop-up Modal -->
-    <div class="modal-overlay" id="windowsModal">
-        <div class="modal-content">
-            <i class="fas fa-tools"></i>
-            <h2>Inakuja Hivi Karibuni!</h2>
-            <p>Toleo la Windows PC bado lipo kwenye hatua za mwisho za matengenezo. Litafunguliwa hivi karibuni.</p>
-            <button class="btn" onclick="hidePopup()">Sawa, Nimeelewa</button>
-        </div>
-    </div>
-
-    <footer>
-        <p style="font-weight: bold; font-size: 18px;">TMG PLATFORM</p>
-        <p style="font-size: 14px; opacity: 0.6; margin-top: 10px;">© 2026 Smart Janja. Haki zote zimehifadhiwa.</p>
-    </footer>
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        function showPopup() {
-            document.getElementById('windowsModal').style.display = 'flex';
-        }
-        function hidePopup() {
-            document.getElementById('windowsModal').style.display = 'none';
-        }
-        
-        window.onclick = function(event) {
-            let modal = document.getElementById('windowsModal');
-            if (event.target == modal) {
-                modal.style.display = "none";
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            cyan: '#00e5ff',
+                            blue: '#0066ff',
+                            navy: '#020a13'
+                        }
+                    }
+                }
             }
         }
     </script>
+
+    <style>
+        body {
+            background-color: #020a13;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(0, 229, 255, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(0, 102, 255, 0.05) 0%, transparent 40%);
+            color: #ffffff;
+        }
+
+        .glass-nav {
+            background: rgba(2, 10, 19, 0.8);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .premium-card {
+            background: linear-gradient(160deg, rgba(15, 23, 42, 0.95) 0%, rgba(2, 10, 19, 1) 100%);
+            border: 1px solid rgba(0, 229, 255, 0.2);
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .premium-card::after {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%; width: 200%; height: 200%;
+            background: radial-gradient(circle at center, rgba(0, 229, 255, 0.03) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .text-glow {
+            text-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
+        }
+
+        .btn-premium {
+            background: linear-gradient(135deg, #00e5ff 0%, #0066ff 100%);
+            box-shadow: 0 10px 30px rgba(0, 102, 255, 0.4);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .btn-premium:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 45px rgba(0, 229, 255, 0.6);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .float-animation { animation: float 4s ease-in-out infinite; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-sans">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NK64GS2F"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- NAV BAR -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-brand-cyan flex items-center justify-center shadow-[0_0_20px_rgba(0,229,255,0.4)]">
+                    <i class="fas fa-rocket text-brand-navy text-xl"></i>
+                </div>
+                <span class="text-2xl font-black tracking-tighter text-white">SMART <span class="text-brand-cyan">JANJA</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-semibold uppercase tracking-widest text-gray-300">
+                <a href="#" class="hover:text-brand-cyan transition-colors">Nyumbani</a>
+                <a href="#" class="hover:text-brand-cyan transition-colors">Sifa</a>
+                <a href="#" class="hover:text-brand-cyan transition-colors">Msaada</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <main class="flex-grow flex flex-col items-center justify-center pt-32 pb-16 px-6">
+        
+        <div class="text-center mb-12">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight leading-tight">
+                Biashara Janja, <br />
+                <span class="text-brand-cyan text-glow">Kiganjani Mwako.</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light">
+                Rahisisha mauzo na usimamizi wa duka lako ukitumia mfumo bora zaidi wa Android Tanzania.
+            </p>
+        </div>
+
+        <!-- DOWNLOAD CARD -->
+        <div class="premium-card w-full max-w-md rounded-[3rem] p-10 text-center float-animation">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand-cyan to-transparent opacity-50"></div>
+            
+            <div class="w-24 h-24 mx-auto mb-8 bg-[#0a192f] rounded-full border-2 border-brand-cyan/30 flex items-center justify-center shadow-[0_0_40px_rgba(0,229,255,0.15)]">
+                <i class="fab fa-android text-5xl text-brand-cyan"></i>
+            </div>
+
+            <h3 class="text-3xl font-bold mb-2">Toleo la Android</h3>
+            <p class="text-brand-cyan text-sm font-semibold mb-10 tracking-widest uppercase italic">Official APK v1.0</p>
+
+            <a href="SmartJanja_1_1.0v.apk" download class="btn-premium block w-full py-5 rounded-2xl text-white font-black text-xl flex items-center justify-center gap-4 group">
+                <i class="fas fa-cloud-download-alt group-hover:scale-125 transition-transform"></i>
+                PAKUA SASA
+            </a>
+
+            <div class="mt-10 flex justify-between items-center text-[10px] font-bold text-gray-500 uppercase tracking-widest">
+                <span class="flex items-center gap-2"><i class="fas fa-check-circle text-brand-cyan"></i> Virus Free</span>
+                <span>File Size: 15MB</span>
+                <span>Security: Verified</span>
+            </div>
+        </div>
+
+        <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl w-full">
+            <div class="text-center">
+                <div class="text-2xl font-bold text-white mb-1">OFFLINE</div>
+                <div class="text-[10px] text-brand-cyan uppercase font-bold tracking-tighter">Hakuna Bando</div>
+            </div>
+            <div class="text-center">
+                <div class="text-2xl font-bold text-white mb-1">SALAMA</div>
+                <div class="text-[10px] text-brand-cyan uppercase font-bold tracking-tighter">Data Zinalindwa</div>
+            </div>
+            <div class="text-center">
+                <div class="text-2xl font-bold text-white mb-1">HARAKA</div>
+                <div class="text-[10px] text-brand-cyan uppercase font-bold tracking-tighter">Ripoti za Chap</div>
+            </div>
+            <div class="text-center">
+                <div class="text-2xl font-bold text-white mb-1">BURE</div>
+                <div class="text-[10px] text-brand-cyan uppercase font-bold tracking-tighter">Pakua Bila Malipo</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-10 border-t border-white/5 bg-brand-navy">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <span class="text-xl font-black text-white">TMG <span class="text-brand-cyan">PLATFORM</span></span>
+                <p class="text-gray-500 text-xs mt-1 italic font-medium">Changing the way you do business.</p>
+            </div>
+            <div class="text-gray-500 text-[10px] font-bold uppercase tracking-widest">
+                &copy; 2026 Smart Janja. All rights reserved.
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
